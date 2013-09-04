@@ -1,0 +1,17 @@
+{
+	"name": "OPHP Wrike Task Addon",
+	"version": "1.0.7",
+	"description": "Adds custom templates to Wrike Tasks",
+	"manifest_version": 2,
+	"icons": { "128":"images/icon.png" },
+	"content_scripts": [
+		{
+			"js": [ "/js/jquery.js", "/js/jquery-ui.js", "/js/script.js" ],
+			"css": [ "/css/style.css", "/css/jquery-ui.css" ],
+			"run_at": "document_idle",
+			"matches": [ "https://www.wrike.com/workspace.htm*" ]
+		}
+	],
+	"permissions": [ "https://www.wrike.com/workspace.htm*" ],
+	"web_accessible_resources": [ "/html/content.html", "/html/form-upcoming.html", "/html/form-previous.html", "/html/form-project.html", "/images/ui-bg_flat_75_ffffff_40x100.png", "/images/ui-bg_glass_55_fbf9ee_1x400.png", "/images/ui-bg_glass_75_dadada_1x400.png", "/images/ui-bg_glass_75_e6e6e6_1x400.png", "/images/ui-bg_highlight-soft_75_cccccc_1x100.png", "/images/", "/images/ui-icons_222222_256x240.png", "/images/ui-icons_454545_256x240.png", "/images/icon.png" ]
+}

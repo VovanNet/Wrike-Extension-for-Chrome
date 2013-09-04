@@ -1,0 +1,39 @@
+<style>
+	#gpz { z-index: 200000; overflow: auto; display: none; position: fixed; top: 0; left: 0; bottom: 0; right: 0; background-image: url( 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAACXBIWXMAAAsTAAALEwEAmpwYAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAAD0lEQVR42mJgYGC4CRBgAADeANokcoX4AAAAAElFTkSuQmCC'); }
+	#gpz .box { margin: auto; display: table; background-color: white; max-width: 1000px;}
+	#gpz .box .footer > .btn { float: right; }
+	#gpz .column { float: left; }
+	#gpz .row { display: table; width: 100%; }
+	#gpz .box .footer {  border-top: solid 1px silver; margin-top: 10px; padding: 10px 10px; }
+	#gpz .box .header { border-bottom: solid 1px silver; margin-bottom: 10px; padding: 5px 10px; }
+	#gpz .box { border: solid 1px gray; padding: 10px; }
+	#gpz #close { float: right;  margin: -3px; font-weight: bold; cursor: pointer; color: gray; }
+	#gpz table {width: 100%; border: 1px solid black; margin: 10px 0; text-align: left; padding: 0px; border-collapse: collapse; padding: 5px;}
+	#gpz  td, th {border: 1px #000 solid; text-align: center;}
+	#gpz  td {padding: 10px;}
+	#gpz  th {background-color: #CCC; text-align: center; padding: 5px 0; font-weight: strong;}
+	#gpz  h1, h2 {text-align: center; font-size: 18px; font-weight: strong;}
+	#gpz  h2 {font-size: 16px;}
+	#gpz  .spacer {margin-top: 60px;}
+	#gpz  textarea {width: 90%;}
+	#gpz .dark-gray td {background-color: #A8A8A8;}
+	#gpz .full-width {width: 90%}
+	#gpz p {margin-top: 10px;}
+	#gpz input['type=button'] {margin-top: 10px; padding: 4px;}
+	textarea {height: 120px; resize: verticle;}
+	
+</style>
+
+<div id="gpz">
+	<form class="box">
+		<div class="header">
+			<span id="close"> X </span> &nbsp;
+		</div>
+		<div class="row content">
+
+		</div>
+		<div class="footer">
+			<button class="btn" type="button" id="create-desc-b">Create Description </button>
+		</div>
+	</form>
+</div> 

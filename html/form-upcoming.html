@@ -1,0 +1,49 @@
+<script>
+jQuery(function($){
+    var $button = $('#add-row'),
+        $row = $('.task-row').clone();
+        $button.click(function(){
+        $row.clone().insertBefore('#final-row');
+    $( ".datepicker" ).datepicker();
+    });
+    $( ".datepicker" ).datepicker();
+  });
+</script>
+<h1>Upcoming Quarter Worksheet</h1>
+<p>Team Name:  <input name="team" type="text" /></p>
+<p>Upcoming Quarter Dates: <input name="quarter_dates_start" type="text" class="datepicker" /> to <input name="quarter_dates_end" type="text" class="datepicker" /></p>
+<table class="chrome_ext">
+  <tr class="gray">
+  	<td>Leader</td>
+  	<td>Project</td>
+  	<td>Start Date</td>
+  	<td>Due Date</td>
+  	<td>Perceived Barriers</td>
+  	<td>Strategies to overcome barriers</td>
+  	<td>Milestone? (yes/no)</td>
+  </tr> 
+  <tr class="task-row">
+    <td><input name="leader" type="text" /></td>
+    <td><input name="project" type="text" /></td>
+    <td><input name="start" type="text" class="datepicker" /></td>
+    <td><input name="end" type="text" class="datepicker" /></td>
+    <td><textarea name="barriers"></textarea></td>
+    <td><textarea name="strategies"></textarea></td>
+    <td><input name="milestone" type="text" /></td>
+  </tr>   
+  <tr id="final-row">
+  	<td colspan="7" style="text-align: right;">
+    <input type="button" class="btn" id="add-row" name="add-row" value="Add row" />
+    </td>
+  </tr>
+  
+</table>
+									
+<div class="instructions">
+<p><strong>Instructions:</strong>  Meet within your team as needed throughout the current quarter to fully complete this worksheet for the upcoming quarter. Submit the completed worksheet to Lillian and Tramaine by the Monday before your scheduled Quarterly Action Planning Review Session (along with your completed Previous Quarter Worksheet and a completed Project Worksheets for each project (including prospective new projects and ones that have carried over from the previous quarter) listed in the above table via a Wrike task assigned by Erin (per the Action Planning Process SOP).</p>
+<p>Each of the projects listed in this worksheet should match/mirror the projects listed in the Timeline (also available on Wrike). If new projects should be added, enter them with a double asterisk in the table above, complete a Project Worksheet for each proposed project, and discuss the projects with Lillian during your team’s Quarterly Action Planning Review Session. If you know of a significant project coming up, make sure you include it for discussion to ensure that the team stays aligned with the office’s strategic direction.</p>
+<p>After the review session, enter the projects as folders and subprojects as subfolders in your team’s Action Plan section within Wrike and create folders for each project within Egnyte (where you will save final documents related to the project) using the identical folder names & structure (per the Action Planning Process SOP). Tramaine and Erin will update the current master Implementation Timeline document and Wrike versions (including linking folders to the Timeline), respectively. Erin will link the Action Plan folders to the Implementation Timeline in Wrike, but this cannot be done in Egnyte. For Egnyte, the folders/projects will only live in the team’s Action Plan folders.</p>
+<p>Post a final version of this worksheet to the Wrike task created by Erin who will save a copy on Egnyte (per the Action Planning Process SOP). </p>
+<div>
+
+

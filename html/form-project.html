@@ -1,0 +1,62 @@
+<script>
+jQuery(function($){
+
+    var $button1 = $('#add-subproject'),
+        $row1 = $('.task-row1').clone();
+        $row2 = $('.task-row2').clone();
+    $button1.click(function(){
+        $row1.clone().insertBefore('#final-row');
+        $row2.clone().insertBefore('#final-row');
+    $( ".datepicker" ).datepicker();
+    });
+    
+    var $button2 = $('#add-task'),
+        $row = $('.task-task').clone();   
+    $button2.click(function(){
+        $row.clone().insertBefore('#final-row');
+    $( ".datepicker" ).datepicker();
+    });    
+
+    var $button3 = $('#remove-task');    
+    $button3.click(function(){
+        $('.task-row').last().remove();
+    $( ".datepicker" ).datepicker();
+    });
+    
+    $( ".datepicker" ).datepicker();
+});
+</script>
+<h1>Project Worksheet</h1>
+<p>Unit/Team Members: <input name="team" type="text" /></p>
+<p>Outcome/Product:   <input name="outcome" type="text" maxlength="400" /></p>
+<table class="chrome_ext">
+  <tr class="dark-gray">
+    <td>Project: <input name="projectname" type="text" /></td>
+    <td>Project Start Date: <input name="projectstart" type="text" class="datepicker" /></td>
+    <td>Project End Date: <input name="projectend" type="text" class="datepicker" /></td>
+  </tr>
+  <tr class="task-row1 task-row gray">
+    <td>Subproject: <input name="subprojectname1" type="text" /></td>
+    <td>Subproject Start Date:  <input name="subprojectstart" type="text" class="datepicker" /></td>
+    <td>End Date: <input name="subprojectend1" type="text" class="datepicker" /></td>
+  </tr>
+  <tr class="task-row2 task-row task-task">
+    <td>Tasks for subproject: <textarea name="tasksubproject1"></textarea></td>
+    <td>Task Start Date:  <input name="task_start" class="datepicker" /></td>
+    <td>End Date: <input name="taskenddate1" class="datepicker" /></td>
+  </tr>
+  <tr id="final-row">
+  	<td colspan="3" style="text-align: right;">
+    <input type="button" class="btn" id="add-subproject" name="add-subproject" value="Add New Subproject" />
+    <input type="button" class="btn" id="add-task" name="add-task" value="Add New Task" /><br />
+    <input type="button" class="btn" id="remove-task" name="remove-task" value="Remove Last Row Task" />
+    </td>
+  </tr>
+  
+</table>
+
+<div class="instructions">
+<p><strong>Instructions:</strong>Complete this worksheet to operationalize each of the projects that your team has identified for the upcoming quarter into step by step tasks. [Divide bigger projects into subprojects if appropriate, with a Project to Task Worksheet for each of the subprojects.] These projects should be consistently listed in and aligned with both the six-month Implementation Timeline and the Quarterly Action Planning Worksheet for the upcoming quarter.  </p>
+<p>Complete as many of these worksheets as needed to operationalize each of the projects (or subprojects) your team will tackle this quarter. Upon completion, submit all of your team’s Project to Task Worksheets (along with the completed Quarterly Action Planning Worksheet) to Lillian and Tramaine by the Monday before your team’s Action Planning Review Session (per the Action Planning Process SOP) via Wrike task (created by Erin).</p> 
+<p>After the session (and approval from Lillian to move forward with the upcoming quarter’s projects), enter the tasks in the appropriate project folders within your team’s Action Plan section of Wrike and the mirroring (identical folder names and structure) version within Engyte (where you will save all final versions of documents). Include the details, documents, etc. for each task per the OPHP Wrike Business Rules. Tag the tasks so that they are included (as appropriate and desired) in the other project folders displayed in your team’s main section within Wrike (probably best to tag the entire folder to your team’s main section).</p>
+</div>

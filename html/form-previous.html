@@ -1,0 +1,36 @@
+<script>
+jQuery(function($){
+    var $button = $('#add-row'),
+        $row = $('.task-row').clone();    
+    $button.click(function(){
+        $row.clone().insertBefore('#final-row');
+    $( ".datepicker" ).datepicker();
+    });
+    $( ".datepicker" ).datepicker();
+});
+</script>
+<h1>Previous Quarter Worksheet</h1>
+<p>Team Name:  <input name="team" type="text" /><p>
+<p>Previous Quarter Dates: <input name="quarter_dates_start" type="text" class="datepicker" /> to <input name="quarter_dates_end" type="text" class="datepicker" /></p>
+<table class="chrome_ext">
+  <tr class="gray">
+  	<td>Leader</td>
+    <td>Project</td>
+    <td>Challenges/Victories</td>
+    <td>Results </td></tr>
+  <tr class="task-row">
+    <td><input name="leader" type="text" class="full-width" /></td>
+    <td><input name="project" type="text" class="full-width" /></td>
+    <td><textarea name="challenges"></textarea></td>
+    <td><textarea name="results"></textarea></td>
+  </tr>
+  <tr id="final-row">
+  	<td colspan="4" style="text-align: right;">
+    <input type="button" class="btn" id="add-row" name="add-row" value="Add row" />
+    </td>
+  </tr>
+</table>
+<div class="instructions">
+<p><strong>Instructions:</strong>  Meet with your team as needed to complete this table in order to accurately reflect the status of each of your team’s projects during the previous quarter. Submit the completed worksheet to Lillian and Tramaine by the Monday before your scheduled Quarterly Action Planning Review Session (along with your completed Upcoming Quarter Worksheet and  Project Worksheets for each upcoming project via Wrike task from Erin (per the Action Planning Process SOP).</p> 
+<p>Each of the projects listed in this worksheet should match/mirror the projects listed in the Implementation Timeline (also available on Wrike). These completed projects should also be reflected in Wrike, having entered them there at the beginning of the quarter and worked on them through Wrike over the past three months.</p>
+<div>
